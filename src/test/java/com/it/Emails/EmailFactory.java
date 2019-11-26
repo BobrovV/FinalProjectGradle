@@ -1,12 +1,6 @@
-package com.it.Users;
+package com.it.Emails;
 
-import com.it.Common.Constants;
-import com.it.Utils.Utils;
-
-import java.util.List;
 import java.util.ResourceBundle;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class EmailFactory {
     static ResourceBundle email = ResourceBundle.getBundle("email");

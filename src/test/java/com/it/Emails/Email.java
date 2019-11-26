@@ -1,4 +1,4 @@
-package com.it.Users;
+package com.it.Emails;
 
 public class Email {
     public String to;

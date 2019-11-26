@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class SendEmailPage extends BasePage{
-	@FindBy(xpath="//p[@class='make_message']/a")
+	@FindBy(xpath="//p[@class='make_message']/a[contains(@href,'/compose/')]")
     private WebElement btnCreateEmail;
 
     @FindBy(xpath="//textarea[@id='to']")

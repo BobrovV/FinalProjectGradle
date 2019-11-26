@@ -18,3 +18,9 @@ dependencies {
     compile group: 'org.seleniumhq.selenium', name: 'selenium-server', version: '3.141.59'
 
 }
+task chromeTest(type:Test) {
+    systemProperty "driver", "chrome"
+    useTestNG {
+        suites "src\\test\\resources\\testNg.xml"
+    }
+}

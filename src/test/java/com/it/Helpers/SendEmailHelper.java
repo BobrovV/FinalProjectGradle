@@ -1,7 +1,7 @@
 package com.it.Helpers;
 
 import com.it.Pages.SendEmailPage;
-import com.it.Users.Email;
+import com.it.Emails.Email;
 
 public class SendEmailHelper extends SendEmailPage {
     public void sendEmail(Email email){
