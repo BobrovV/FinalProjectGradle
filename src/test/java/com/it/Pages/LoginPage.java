@@ -14,6 +14,13 @@ public class LoginPage extends BasePage{
     private WebElement btnSubmit;
 
     public void login(String login, String password){
+        driver.scrollDown();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        driver.scrollUp();
         inputLogin.sendKeys(login);
         inputPassword.sendKeys(password);
         btnSubmit.click();
